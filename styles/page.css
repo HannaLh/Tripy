@@ -1,0 +1,275 @@
+/* Обнуление */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+/* - */
+
+body {
+	background-color: #F5F5F5;
+}
+
+.section_search {
+	margin-top: 84px;
+}
+
+.header_nav,
+.section_search,
+.common-main-section-indent,
+.footer-main {
+	padding: 0 135px;
+}
+
+.common-main-section-indent,
+.section_slider,
+.footer-main {
+	margin-top: 120px;
+}
+
+.header_nav-list li a {
+    color: #808080;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.login_buttons button:nth-child(1) {
+	border: none;
+	background-color: #FFFFFF;
+	font-size: 20px;
+	line-height: 24px;
+	color: #808080;
+}
+
+.login_buttonss button:nth-child(2) {
+	width: 122px;
+	height: 60px;
+	background-color: #E61C5D;
+	border-radius: 45px;
+	padding: 18px 24px;
+	border: none;
+	color: #FFFFFF;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.section_search-left p {
+	color: #808080;
+	font-size: 24px;
+	line-height: 29px;
+	margin-bottom: 32px;
+}
+
+.section_search-left h1 {
+	font-weight: 700;
+	font-size: 64px;
+	color: #112B3C;
+	margin-bottom: 32px;
+}
+
+.section_search-left form label {
+	color: #808080;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.company-goals p:nth-child(2) {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 58px;
+	color: #112B3C;
+	margin-bottom: 24px;
+}
+.company-goals p:nth-child(3) {
+	font-size: 20px;
+	color: #808080;
+	margin-bottom: 24px;
+}
+
+.company_details span {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	color: #E61C5D;
+}
+
+.company_details p {
+	font-size: 16px;
+	line-height: 19px;
+	color: #808080;
+}
+
+.section-title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #E61C5D;
+	margin-bottom: 4px;
+}
+
+.section_slider {
+	margin-left: 135px;
+}
+
+.section_tour-packages {
+	margin-bottom: 80px;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 58px;
+	color: #112B3C;
+}
+
+.section_reviews p:nth-child(2){
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 58px;
+}
+
+.reviews-slider article h3 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	color: #112B3C;
+}
+
+article .user-rev, 
+.common-professions {
+	font-size: 14px;
+	line-height: 17px;
+	color: #112B3C;
+}
+
+.section_tours h2 {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 58px;
+	text-align: center;
+}
+
+.section_tours p {
+	margin-top: 32px;
+	font-size: 18px;
+	line-height: 22px;
+	color: #808080;
+}
+
+.section_tours button {
+	margin-top: 32px;
+	width: 156px;
+	height: 60px;
+	background-color: #E61C5D;
+	border: none;
+	border-radius: 45px;
+	padding: 18px 24px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #FFFFFF;
+}
+
+.tour-price {
+	font-weight: 700;
+	font-size: 20px;
+	color: #E61C5D;
+}
+
+.tour-option h3 {
+	font-weight: 700;
+	font-size: 18px;
+	color: #112B3C;
+}
+
+.tour-option p {
+	font-weight: 500;
+	font-size: 14px;
+	color: #808080;
+}
+
+.tour-price-middle {
+	font-weight: 700;
+	font-size: 16px;
+	color: #E61C5D;
+}
+
+.tour-option-middle h3 {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #112B3C;
+}
+
+.tour-option-middle p {
+	font-weight: 500;
+	font-size: 10px;
+	color: #808080;
+}
+
+.footer-main h4 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	color: #112B3C;
+}
+
+.footer_navigation a {
+	font-size: 14px;
+	line-height: 17px;
+	color: #112B3C;
+}
+
+.footer_contacts address, .newsletter label{
+	font-size: 14px;
+	line-height: 140%;
+	color: #112B3C;
+}
+
+.newsletter input {
+	font-size: 12px;
+	color: #808080;
+}
+
