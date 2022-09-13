@@ -52,6 +52,14 @@ body {
 	background-color: #F5F5F5;
 }
 
+.header_nav,
+.section_search,
+.common-main-section-indent,
+.section_slider,
+.footer-main  {
+	font-family: 'Barlow', sans-serif;
+}
+
 .section_search {
 	margin-top: 84px;
 }
