@@ -1,53 +1,3 @@
-/* Обнуление */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-a {
-	text-decoration: none;
-}
-/* - */
-
 body {
 	background-color: #F5F5F5;
 }
@@ -124,11 +74,10 @@ body {
 	font-size: 20px;
 	line-height: 24px;
 	color: #808080;
+	padding-right: 30px;
 }
 
 .login_buttons button:nth-child(2) {
-	width: 122px;
-	height: 60px;
 	background-color: #E61C5D;
 	border-radius: 45px;
 	padding: 18px 24px;
@@ -309,15 +258,16 @@ article .user-rev,
 }
 
 .footer-container {
-	overflow: auto;
 	margin: 0 auto;
-
+	overflow: auto;
+	margin-bottom: 119px;
 }
+
 .footer_contacts{ 
 	margin-right: 100px;
 }
 
-.footer-nav-margin {
+.footer-about {
 	margin-right: 146px;
 }
 
@@ -326,10 +276,16 @@ article .user-rev,
 	font-size: 18px;
 	line-height: 22px;
 	color: #112B3C;
+	padding-bottom: 18px;
 }
 
-.footer-nav-float-right {
-	float: right;
+.footer-nav li {
+	padding-bottom: 18px;
+}
+
+.footer-company,
+.footer-support {
+	margin-right: 108px;
 }
 
 .footer_navigation a {
@@ -340,8 +296,13 @@ article .user-rev,
 
 .footer_contacts address, .newsletter label{
 	font-size: 14px;
-	line-height: 140%;
+	line-height: 14px;
 	color: #112B3C;
+}
+
+.footer_contacts img,
+.footer_contacts address {
+	margin-bottom: 18px;
 }
 
 .newsletter input {
