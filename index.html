@@ -8,6 +8,21 @@
     <meta name="keywords" content="Tripy, locations, dates, countries, trips">
     <title>Tripy - book your trip</title>
 
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/cargo_favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/cargo_favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon-img/Logo.svg">
+
+    <link rel="mask-icon" href="./icon-img/Logo.svg" color="#fff">
+
+    <meta name="og:url" content="#" />
+    <meta name="og:title" content="Tripy - book your trip" />
+    <meta name="og:description" content="Tripy - book your trip website" />
+    <meta name="og:type" content="article" />
+    <meta name="og:image" content="./pictures-img/section2.png" />
+    <meta property="og:image:width" content="350" />
+    <meta property="og:image:height" content="200" />
+    <meta property="og:image:alt" content="selector" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
@@ -17,20 +32,24 @@
 </head>
 <body>
     <header>
-        <div class="header_nav">
-            <a href="#"><img src="./icon-img/Logo.png" alt="company logo" /></a>
-            <nav>
-                <ul class="header_nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Price</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="login_buttons"> 
-                <button type="button">Login</button>
-                <button type="button">Register</button>
+        <div class="container">
+            <div class="header_nav">
+                <a href="./index.html" class="float-left header-logo">
+                    <img src="./icon-img/Logo.svg" alt="Tripy logo"/>
+                </a>
+                <nav class="float-left header_nav-list">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Price</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="login_buttons float-right"> 
+                    <button type="button">Login</button>
+                    <button type="button">Register</button>
+                </div>
             </div>
         </div>
     </header>
@@ -38,8 +57,8 @@
         <section>
             <div class="section_search">
                 <div class="section_search-left">
-                    <h1>Dare to live the life you've always wanted.</h1>
-                    <p>Life is short and the world is wide. So, better get started.</p>
+                    <h1>Dare to live the life<br>you've always<br>wanted.</h1>
+                    <p>Life is short and the world is wide. So, better<br>get started.</p>
                     <form action="" method="GET">
                         <div>
                             <label>Location</label>
@@ -65,8 +84,8 @@
                 <div class="section_about-right">
                     <div class="company-goals">
                         <h2 class="section-title">about us</h2>
-                        <p>Our tour plan is to fulfil your dream wish</p>
-                        <p>Understand to achieve anything requires faith and belief in yourself, vision, hard work, determination, and dedication.</p>
+                        <p>Our tour plan is to<br>fulfil your dream wish</p>
+                        <p>Understand to achieve anything requires faith and<br>belief in yourself, vision, hard work, determination,<br>and dedication.</p>
                     </div>
                     <div class="company_details">
                         <div>
@@ -162,49 +181,57 @@
         </section>
     </main>
     <footer>
-        <div class="footer-main">
-            <div class="footer_contacts">
-                <img src="./icon-img/Logo.png" alt="company logo" />
-                <address>4517 Washington Ave. Manchester, Kentucky 39495</address>
-                <div class="footer_social-networks">
-                    <a href="#" aria-label="Facebook"><img src="./icon-img/facebook.png" alt="facebook logo"/></a>
-                    <a href="#" aria-label="Instagram"><img src="./icon-img/instagram.png" alt="instagram logo"/></a>
-                    <a href="#" aria-label="Youtube"><img src="./icon-img/youtube.png" alt="youtube logo"/></a>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer_contacts float-left">
+                    <img src="./icon-img/Logo.png" alt="company logo" />
+                    <address>4517 Washington Ave.<br>Manchester, Kentucky 39495</address>
+                    <div class="footer_social-networks">
+                        <a href="#" aria-label="Facebook"><img src="./icon-img/facebook.png" alt="facebook logo"/></a>
+                        <a href="#" aria-label="Instagram"><img src="./icon-img/instagram.png" alt="instagram logo"/></a>
+                        <a href="#" aria-label="Youtube"><img src="./icon-img/youtube.png" alt="youtube logo"/></a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer_navigation">
-                <h4>About</h4>
-                <nav>
-                    <a href="#">About us</a>
-                    <a href="#">Features</a>
-                    <a href="#">News</a>
-                    <a href="#">Plans</a>
-                </nav>
-            </div>
-            <div class="footer_navigation">
-                <h4>Company</h4>
-                <nav>
-                    <a href="#">Why Tripy</a>
-                    <a href="#">Partner with us</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Blog</a>
-                </nav>
-            </div>
-            <div class="footer_navigation">
-                <h4>Support</h4>
-                <nav>
-                    <a href="#">Account</a>
-                    <a href="#">Support center</a>
-                    <a href="#">Feedback</a>
-                    <a href="#">Contact us</a>
-                </nav>
-            </div>
-            <div class="newsletter">
-                <h4>Newsletter</h4>
-                <form action="" method="POST">
-                    <label for="news-subscribe">Subscribe our newsletter and get exciting offers </label>
-                    <input id="news-subscribe" type="email" placeholder="Enter your email address"/>
-                </form>
+                <div class="footer_navigation float-left footer-nav-margin ">
+                    <h4>About</h4>
+                    <nav class="footer-nav-float-right">
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Plans</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer_navigation about_company float-left">
+                    <h4>Company</h4>
+                    <nav class="footer-nav-float-right">
+                        <ul>
+                            <li><a href="#">Why Tripy</a></li>
+                            <li><a href="#">Partner with us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer_navigation float-left">
+                    <h4>Support</h4>
+                    <nav class="footer-nav-float-right">
+                        <ul>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Support center</a></li>
+                            <li><a href="#">Feedback</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="newsletter float-right">
+                    <h4>Newsletter</h4>
+                    <form action="" method="POST">
+                        <label for="news-subscribe">Subscribe our newsletter and get<br>exciting offers </label>
+                        <input id="news-subscribe" type="email" placeholder="Enter your email address"/>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
