@@ -16,7 +16,7 @@ header {
 .container {
     width: 100%;
     max-width: 1170px;
-    overflow: auto;
+    overflow: hidden;
 	margin: 0 auto;
 }
 
@@ -196,7 +196,7 @@ header {
 	text-align: center;
 }
 
-.section_reviews p:nth-child(2){
+.section_reviews p:nth-child(2) {
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 58px;
@@ -204,8 +204,22 @@ header {
 	text-align: center;
 }
 
+.reviews-slider {
+	width: 970px;
+	margin: 0 auto;
+}
+
+article img {
+	padding-bottom: 12px;
+}
+
+.user-photo {
+	padding-top: 46px;
+}
+
 .reviews-slider article {
-	width: 302px;
+	width: 300px;
+	height: 350px;
 	float: left;
 	background: #FFFFFF;
 	border: 1px solid #FAFAFA;
@@ -224,6 +238,14 @@ header {
 	font-size: 18px;
 	line-height: 22px;
 	color: #112B3C;
+}
+
+.user-rev {
+	padding: 0px 42px 20px 41px;
+}
+
+article .common-professions {
+	padding-bottom: 4px;
 }
 
 article .user-rev, 
@@ -259,6 +281,13 @@ article .user-rev,
 	color: #FFFFFF;
 }
 
+
+.section_tours button {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
 .places-items div {
 	float: left;
 }
@@ -271,13 +300,14 @@ article .user-rev,
 	font-weight: 700;
 	font-size: 20px;
 	color: #E61C5D;
+	padding-right: 13px;
 }
 
 .tour-option {
 	filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.04));
 	background: #FFFFFF;
 	border-radius: 16px;
-	width: 254px;
+	padding: 8px;
 }
 
 .tour-option img {
@@ -288,34 +318,33 @@ article .user-rev,
 	font-weight: 700;
 	font-size: 18px;
 	color: #112B3C;
-	padding-bottom: 8px;
+	padding-bottom: 8px 8px 0px 8px;
 }
 
 .tour-option p {
 	font-weight: 500;
 	font-size: 14px;
 	color: #808080;
+	padding-bottom: 21px;
 }
 
 .tour-price-middle {
 	font-weight: 700;
 	font-size: 16px;
 	color: #E61C5D;
+	padding-right: 13px;
 }
 
 .tour-option-middle {
 	filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.04));
 	background: #FFFFFF;
 	border-radius: 16px;
-	width: 190px;
+	margin-top: 113px;
+	padding: 7px 7px 0px 7px;
 }
 
 .tour-option-middle img {
 	padding-bottom: 12px;
-}
-
-.container::-webkit-scrollbar {
-    width: 0px;
 }
 
 .tour-option-middle h3 {
@@ -330,6 +359,7 @@ article .user-rev,
 	font-weight: 500;
 	font-size: 10px;
 	color: #808080;
+	padding-bottom: 11px;
 }
 
 .footer-container {
@@ -378,8 +408,24 @@ article .user-rev,
 	margin-bottom: 18px;
 }
 
+.newsletter p {
+	font-size: 14px;
+	line-height: 16px;
+	color: #112B3C;
+	margin-bottom: 18px;
+}
+
 .newsletter input {
 	font-size: 12px;
 	color: #808080;
+	border: none;
+	background: #FFFFFF;
+	box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
+	border-radius: 55px;
+	line-height: 16px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	padding-left: 19px;
+	padding-right: 82px;
 }
 
