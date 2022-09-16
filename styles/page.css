@@ -48,6 +48,7 @@ header {
     line-height: 24px;
 	padding-right: 40px;
 }
+
 .header_nav-list li:last-of-type a {
 	padding-right: 0px;
 }
@@ -165,6 +166,7 @@ header {
 	color: #112B3C;
 	margin-bottom: 24px;
 }
+
 .company-goals p:nth-child(3) {
 	font-size: 20px;
 	line-height: 30px;
@@ -295,7 +297,6 @@ article .user-rev,
 	line-height: 24px;
 	color: #FFFFFF;
 }
-
 
 .section_tours button {
 	position: relative;
