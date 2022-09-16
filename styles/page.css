@@ -20,11 +20,12 @@ header {
 	margin: 0 auto;
 }
 
-.header_nav {
+.header_wrap {
 	height: 100px;
+	margin-bottom: 84px;
 }
 
-.float-left {
+.fl {
 	float: left;
 }
 
@@ -79,10 +80,6 @@ header {
 	line-height: 24px;
 }
 
-.section_search {
-	margin-top: 84px;
-}
-
 .section_search-left {
 	float: left;
 }
@@ -107,6 +104,7 @@ header {
 	background: #FFFFFF;
 	box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
 	border-radius: 58px;
+	overflow: hidden;
 }
 
 .form-wrap form {
@@ -122,11 +120,7 @@ header {
 }
 
 .location-option {
-	padding-right: 32px;
-}
-
-.date-option {
-	padding-left: 32px;
+	padding-right: 64px;
 }
 
 .date-option p,
@@ -236,7 +230,6 @@ article img {
 
 .reviews-slider article {
 	width: 300px;
-	height: 350px;
 	float: left;
 	background: #FFFFFF;
 	border: 1px solid #FAFAFA;
@@ -429,6 +422,7 @@ article .user-rev,
 	line-height: 16px;
 	color: #112B3C;
 	margin-bottom: 18px;
+	width: 207px;
 }
 
 .newsletter input {
