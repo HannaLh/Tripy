@@ -89,6 +89,7 @@ header {
 	font-size: 64px;
 	color: #112B3C;
 	margin-bottom: 32px;
+	width: 568px;
 }
 
 .section_search-left p:nth-child(2) {
@@ -96,6 +97,7 @@ header {
 	font-size: 24px;
 	line-height: 29px;
 	margin-bottom: 32px;
+	width: 469px;
 }
 
 .form-wrap {
@@ -159,6 +161,7 @@ header {
 	line-height: 58px;
 	color: #112B3C;
 	margin-bottom: 24px;
+	width: 469px;
 }
 
 .company-goals p:nth-child(3) {
@@ -166,6 +169,7 @@ header {
 	line-height: 30px;
 	color: #808080;
 	margin-bottom: 24px;
+	width: 442px;
 }
 
 .company_details div {
@@ -195,12 +199,13 @@ header {
 	margin-left: 135px;
 }
 
-.section_tour-packages {
+.section_tour-packages p {
 	margin-bottom: 80px;
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 58px;
 	color: #112B3C;
+	width: 591px;
 }
 
 .section_reviews h2 {
