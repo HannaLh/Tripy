@@ -91,10 +91,9 @@ header {
 	font-size: 64px;
 	color: #112B3C;
 	margin-bottom: 32px;
-	white-space: pre-wrap;
 }
 
-.section_search-left p {
+.section_search-left p:nth-child(2) {
 	color: #808080;
 	font-size: 24px;
 	line-height: 29px;
@@ -103,26 +102,42 @@ header {
 
 .form-wrap {
 	width: 469px;
+	height: 80px;
 	background: #FFFFFF;
 	box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
 	border-radius: 58px;
 }
 
-.section_search-left form {
+.form-wrap form {
 	padding: 16px 27px;
 }
 
-.section_search-left form label {
+.form-wrap form label {
 	color: #808080;
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 14px;
+	padding-bottom: 6px;
 }
 
-.section_search-left button {
-	border: none;
+.location-option {
+	padding-right: 32px;
+}
+
+.date-option {
+	padding-left: 32px;
+}
+
+.date-option p,
+.location-option p {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 14px;
+	color: #112B3C;
+}
+
+.form-wrap button {
 	background-color: #FFFFFF;
-	margin-left: 32px;
 }
 
 .section-image-right img{
