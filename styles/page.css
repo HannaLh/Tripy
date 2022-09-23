@@ -141,6 +141,7 @@ header {
 }
 
 .location-option {
+	position: relative;
 	padding-right: 32px;
 	padding-left: 32px;
 }
