@@ -44,14 +44,37 @@ header {
 }
 
 .header_nav-list li a {
+	position: relative;
     color: #808080;
     font-size: 20px;
     line-height: 24px;
-	padding-right: 40px;
+	margin-right: 40px;
 }
 
 .header_nav-list li:last-of-type a {
 	padding-right: 0px;
+}
+
+.header_nav-list li a:hover {
+	font-weight: 500;
+	color: #000000;
+}
+
+.header_nav-list li a:after {
+	content: '';
+	display: none;
+	position: absolute;
+	width: 18px;
+	height: 4px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	top: 30px;
+	background: #E61C5D;
+	border-radius: 30px;
+}
+
+.header_nav-list li a:hover:after {
+	display: block;
 }
 
 .login_buttons {
@@ -101,16 +124,12 @@ header {
 }
 
 .form-wrap {
-	width: 469px;
-	height: 80px;
+	max-width: 469px;
 	background: #FFFFFF;
 	box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
 	border-radius: 58px;
 	overflow: hidden;
-}
-
-.form-wrap form {
-	padding: 16px 27px;
+	padding: 15px 27px;
 }
 
 .form-wrap form label {
@@ -122,7 +141,40 @@ header {
 }
 
 .location-option {
-	padding-right: 64px;
+	padding-right: 32px;
+	padding-left: 32px;
+}
+
+.location-option:after {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 24px;
+	background-color: #808080;
+	opacity: 0.24;
+	left: 100%;
+	top: 50%;
+    transform: translate(0, -50%);
+}
+
+.location-option span {
+	position: absolute;
+	left: 0;
+	top: 50%;
+    transform: translate(0, -50%);
+}
+
+.date-option {
+	padding-left: 64px;
+	position: relative;
+}
+
+.date-option span {
+	padding-left: 32px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+    transform: translate(0, -50%);
 }
 
 .date-option p,
@@ -220,6 +272,10 @@ header {
 	text-align: center;
 }
 
+.section_reviews p:nth-child(2) span{
+	display: block;
+}
+
 .reviews-slider {
 	width: 970px;
 	margin: 0 auto;
@@ -235,6 +291,7 @@ article img {
 
 .reviews-slider article {
 	width: 300px;
+	min-height: 350px;
 	float: left;
 	background: #FFFFFF;
 	border: 1px solid #FAFAFA;
@@ -270,11 +327,21 @@ article .user-rev,
 	color: #112B3C;
 }
 
-.section_tours h2 {
+.section_tours_inner {
+	position: relative;
+	top: 30px;
+	left: 0;
+}
+
+.section_tours_inner h2 {
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 58px;
 	text-align: center;
+}
+
+.section_tours_inner h2 span {
+	display: block;
 }
 
 .section_tours-text {
@@ -285,7 +352,7 @@ article .user-rev,
 	text-align: center;
 }
 
-.section_tours button {
+.section_tours_inner button {
 	margin-top: 32px;
 	background-color: #E61C5D;
 	border-radius: 45px;
@@ -411,7 +478,8 @@ article .user-rev,
 	color: #112B3C;
 }
 
-.footer_contacts address, .newsletter label{
+.footer_contacts address,
+.newsletter label {
 	font-size: 14px;
 	line-height: 14px;
 	color: #112B3C;
@@ -430,6 +498,10 @@ article .user-rev,
 	width: 207px;
 }
 
+.newsletter form {
+	position: relative;
+}
+
 .newsletter input {
 	font-size: 12px;
 	color: #808080;
@@ -442,5 +514,12 @@ article .user-rev,
 	padding-bottom: 17px;
 	padding-left: 19px;
 	padding-right: 82px;
+}
+
+.newsletter form button {
+	position: absolute;
+	left: 85%;
+	top: 50%;
+    transform: translate(0, -50%);
 }
 
