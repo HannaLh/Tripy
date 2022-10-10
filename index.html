@@ -32,16 +32,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
 
+
     <link rel="stylesheet" href="./styles/page.css">
 </head>
 <body>
     <header>
         <div class="container header_wrap">
             <div class="header_nav">
-                <a href="./index.html" class="fl header-logo">
+                <a href="./index.html" class="header-logo">
                     <img src="./icon-img/Logo.svg" alt="Tripy logo"/>
                 </a>
-                <nav class="fl header_nav-list">
+                <nav class="header_nav-list">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -50,7 +51,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <div class="login_buttons fr"> 
+                <div class="login_buttons"> 
                     <button type="button">Login</button>
                     <button type="button">Register</button>
                 </div>
@@ -63,23 +64,17 @@
                 <div class="section_search">
                     <div class="section_search-left">
                         <h1>Dare to live the life you've always wanted.</h1>
-                        <p>Life is short and the world is wide. So, better get started.</p>
+                        <p class="section_search-paragtaph">Life is short and the world is wide. So, better get started.</p>
                         <div class="form-wrap">
-                            <form action="" method="GET">
-                                <div class="fl location-option">
-                                    <span><img src="./icon-img/location.svg" alt="" /></span>
-                                    <label>Location</label>
-                                    <select></select>
-                                    <p>Allentown, New Mexico</p>
-                                </div>
-                                <div class="fl date-option">
-                                    <span><img src="./icon-img/calendar-2.svg" alt="" /></span>
-                                    <label>Date</label>
-                                    <select></select>
-                                    <p>04 Aug, 2022</p>
-                                </div>
-                                <button class="fr" type="button"><img src="./icon-img/Search-button.svg" alt="search button"/></button>
-                            </form>
+                            <div class="location-option">
+                                <p class="location-option-dropdown">Location</p>
+                                <p class="location-option-list">Allentown, New Mexico</p>
+                            </div>
+                            <div class="date-option">
+                                <p class="date-option-dropdown">Date</p>
+                                <p class="date-option-list">04 Aug, 2022</p>
+                            </div>
+                            <button type="button"><img src="./icon-img/Search-button.svg" alt="search button"/></button>
                         </div>
                     </div>
                     <div class="section-image-right">
@@ -94,7 +89,7 @@
                     <div class="section_about-image-left fl">
                         <img src="./pictures-img/section2.png" alt="" />
                     </div>
-                    <div class="section_about-right fr">
+                    <div class="section_about-right">
                         <div class="company-goals fl">
                             <h2 class="section-title">about us</h2>
                             <p>Our tour plan is to fulfil your dream wish</p>
@@ -124,12 +119,86 @@
             </div>
         </section>
         <section>
-            <div class="section_slider">
+            <div class="section_slider container">
                 <div class="section_tour-packages">
                     <h2 class="section-title">tour packages</h2>
                     <p>The amazing places around the world</p>
                 </div>
-                <div class="places-slider"></div>
+                <div class="places_slider">
+                    <div class="places_slider__items">
+                        <img class="items-images" src="./pictures-img/slider1.png" alt="pistures of countries" />
+                        <div class="items-description">
+                            <h3>The unique character as a symbol of taste and ostentation</h3>
+                            <p class="slider_country-name">Prague, Czechia</p>
+                            <img class="places_slider-rating" src="./icon-img/Content.svg" alt="trip rating"/>
+                            <div class="slider_info">
+                                <p class="slider_info_price">$200</p>
+                                <p class="slider_info_days">10 days tour</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="places_slider__items">
+                        <img class="items-images" src="./pictures-img/slider2.png" alt="pistures of countries" />
+                        <div class="items-description">
+                            <h3>The unique character as a symbol of taste and ostentation</h3>
+                            <p class="slider_country-name">Prague, Czechia</p>
+                            <img class="places_slider-rating" src="./icon-img/Content.svg" alt="trip rating"/>
+                            <div class="slider_info">
+                                <p class="slider_info_price">$200</p>
+                                <p class="slider_info_days">10 days tour</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="places_slider__items">
+                        <img class="items-images" src="./pictures-img/slider3.png" alt="pistures of countries" />
+                        <div class="items-description">
+                            <h3>The unique character as a symbol of taste and ostentation</h3>
+                            <p class="slider_country-name">Prague, Czechia</p>
+                            <img class="places_slider-rating" src="./icon-img/Content.svg" alt="trip rating"/>
+                            <div class="slider_info">
+                                <p class="slider_info_price">$200</p>
+                                <p class="slider_info_days">10 days tour</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="places_slider__items">
+                        <img class="items-images" src="./pictures-img/slider1.png" alt="pistures of countries" />
+                        <div class="items-description">
+                            <h3>The unique character as a symbol of taste and ostentation</h3>
+                            <p class="slider_country-name">Prague, Czechia</p>
+                            <img class="places_slider-rating" src="./icon-img/Content.svg" alt="trip rating"/>
+                            <div class="slider_info">
+                                <p class="slider_info_price">$200</p>
+                                <p slider_info_days>10 days tour</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="places_slider__items">
+                        <img class="items-images" src="./pictures-img/slider3.png" alt="pistures of countries" />
+                        <div class="items-description">
+                            <h3>History is not about the past but a map of the past</h3>
+                            <p class="slider_country-name">Prague, Czechia</p>
+                            <img class="places_slider-rating" src="./icon-img/Content.svg" alt="trip rating"/>
+                            <div class="slider_info">
+                                <p class="slider_info_price">$200</p>
+                                <p class="slider_info_days">10 days tour</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="places_slider__items">
+                        <img class="items-images" src="./pictures-img/slider2.png" alt="pistures of countries" />
+                        <div class="items-description">
+                            <h3>The unique character as a symbol of taste and ostentation</h3>
+                            <p class="slider_country-name">Prague, Czechia</p>
+                            <img class="places_slider-rating" src="./icon-img/Content.svg" alt="trip rating"/>
+                            <div class="slider_info">
+                                <p class="slider_info_price">$200</p>
+                                <p class="slider_info_days">10 days tour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
@@ -199,6 +268,7 @@
         </section>
     </main>
     <footer>
+        <!-- TODO переделать кнопку SEND в форме имейл, найти иконку юутуба, в places_items опустить средние картинки -->
         <div class="container footer-container">
             <div class="footer-main">
                 <div class="footer_contacts fl">
@@ -254,5 +324,11 @@
             </div>
         </div>
     </footer>
+    <!-- Подключение jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- Подключение slick slider -->
+    <script src="./js/slick.min.js"></script>
+    <!-- Файл java script -->
+    <script src="./js/custom.js"></script>
 </body>
 </html>
