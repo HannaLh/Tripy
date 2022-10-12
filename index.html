@@ -34,22 +34,26 @@
 
 
     <link rel="stylesheet" href="./styles/page.css">
+    <link rel="stylesheet" href="./styles/media.css">
 </head>
 <body>
     <header>
         <div class="container header_wrap">
             <div class="header_nav">
                 <a href="./index.html" class="header-logo">
-                    <img src="./icon-img/Logo.svg" alt="Tripy logo"/>
+                    <img id="nav-btn-image" src="./icon-img/Logo.svg" alt="Tripy logo"/>
                 </a>
-                <nav class="header_nav-list">
-                    <ul>
+                <nav id="nav" class="header_nav-list">
+                    <ul class="nav-list">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Price</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="./icon-img/menu-open.png" alt="Nav button"/>
+                    </button>
                 </nav>
                 <div class="login_buttons"> 
                     <button type="button">Login</button>
@@ -63,7 +67,7 @@
             <div class="container">
                 <div class="section_search">
                     <div class="section_search-left">
-                        <h1>Dare to live the life you've always wanted.</h1>
+                        <h1 class="main-heading">Dare to live the life you've always wanted.</h1>
                         <p class="section_search-paragtaph">Life is short and the world is wide. So, better get started.</p>
                         <div class="form-wrap">
                             <div class="location-option">
@@ -86,13 +90,13 @@
         <section>
             <div class="container">
                 <div class="section_about common-main-section-indent">
-                    <div class="section_about-image-left fl">
+                    <div class="section_about-image-left">
                         <img src="./pictures-img/section2.png" alt="" />
                     </div>
                     <div class="section_about-right">
                         <div class="company-goals fl">
                             <h2 class="section-title">about us</h2>
-                            <p>Our tour plan is to fulfil your dream wish</p>
+                            <p class="common-media-fz">Our tour plan is to fulfil your dream wish</p>
                             <p>Understand to achieve anything requires faith and belief in yourself, vision, hard work, determination, and dedication.</p>
                         </div>
                         <div class="company_details">
@@ -119,10 +123,10 @@
             </div>
         </section>
         <section>
-            <div class="section_slider container">
+            <div class="container section_slider">
                 <div class="section_tour-packages">
                     <h2 class="section-title">tour packages</h2>
-                    <p>The amazing places around the world</p>
+                    <p class="common-media-fz">The amazing places around the world</p>
                 </div>
                 <div class="places_slider">
                     <div class="places_slider__items">
@@ -205,7 +209,7 @@
             <div class="container">
                 <div class="section_reviews common-main-section-indent">
                     <h2 class="section-title">testimonial</h2>
-                    <p>Satisfied travellers around <span>the world</span></p>
+                    <p class="common-media-fz">Satisfied travellers around <span>the world</span></p>
                     <div class="reviews-slider">
                         <article>
                             <img class="user-photo" src="./pictures-img/Ellipse3.png" alt=""/>
@@ -237,22 +241,22 @@
             <div class="container">
                 <div class="section_tours common-main-section-indent ">
                     <div class="section_tours_inner">
-                        <h2>We can do anything we want to<span>if we stick to it long enough.</span></h2>
+                        <h2 class="common-media-fz">We can do anything we want to<span>if we stick to it long enough.</span></h2>
                         <p class="section_tours-text">Do what you can, with what you have, where you are.</p>
                         <button type="button">See all tours</button>
                     </div>
                     <div class="places-items">
-                        <div class="tour-option with-margin">
+                        <div class="tour-option">
                             <img src="./pictures-img/Image.png" alt=""/>
                             <h3>Porto, Portugal</h3>
                             <p><span class="tour-price">$150</span>days tour</p>
                         </div>
-                        <div class="tour-option-middle with-margin">
+                        <div class="tour-option-middle">
                             <img src="./pictures-img/Image1.png" alt=""/>
                             <h3>Paris, France</h3>
                             <p><span class="tour-price-middle">$100</span>5 days tour</p>
                         </div>
-                        <div class="tour-option-middle with-margin">
+                        <div class="tour-option-middle">
                             <img src="./pictures-img/Image2.png" alt=""/>
                             <h3>Paris, France</h3>
                             <p><span class="tour-price-middle">$250</span>6 days tour</p>
@@ -268,10 +272,10 @@
         </section>
     </main>
     <footer>
-        <!-- TODO переделать кнопку SEND в форме имейл, найти иконку юутуба, в places_items опустить средние картинки -->
+        <!-- TODO найти иконку юутуба -->
         <div class="container footer-container">
             <div class="footer-main">
-                <div class="footer_contacts fl">
+                <div class="footer_contacts">
                     <img src="./icon-img/Logo.svg" alt="company logo" />
                     <address>4517 Washington Ave.<br>Manchester, Kentucky 39495</address>
                     <div class="footer_social-networks">

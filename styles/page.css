@@ -23,6 +23,10 @@ header {
 	margin-bottom: 84px;
 }
 
+.nav-button {
+	display: none;
+}
+
 .header-logo {
 	width: 55px;
 	padding-top: 35px;
@@ -38,8 +42,9 @@ header {
 	margin-right: 106px;
 }
 
-.header_nav-list li {
-	float: left;
+.nav-list {
+	display: flex;
+	column-gap: 40px;
 }
 
 .header_nav-list li a {
@@ -47,7 +52,6 @@ header {
     color: #808080;
     font-size: 20px;
     line-height: 24px;
-	margin-right: 40px;
 }
 
 .header_nav-list li:last-of-type a {
@@ -55,8 +59,8 @@ header {
 }
 
 .header_nav-list li a:hover {
-	font-weight: 500;
 	color: #000000;
+	text-shadow: 1px 0 0 black;
 }
 
 .header_nav-list li a:after {
@@ -102,7 +106,7 @@ header {
 	display: flex;
 }
 
-.section_search-left h1 {
+.section_search-left .main-heading{
 	font-weight: 700;
 	font-size: 64px;
 	color: #112B3C;
@@ -200,7 +204,7 @@ header {
 	background-color: #FFFFFF;
 }
 
-.section-image-right img{
+.section-image-right {
 	margin-left: 130px;
 }
 
@@ -208,7 +212,7 @@ header {
 	display: flex;
 }
 
-.section_about-image-left img {
+.section_about-image-left {
 	margin-right: 130px;
 }
 
@@ -343,7 +347,7 @@ header {
 }
 
 .slick-arrow.slick-prev {
-	left: 92%;
+	left: 90%;
 	margin-left: -12px;
 	background: url('../icon-img/arrow-left.svg') center no-repeat;
 	width: 48px;
@@ -353,7 +357,7 @@ header {
 }
 
 .slick-arrow.slick-next {
-	right: 0;
+	right: 20px;
 	background: url('../icon-img/arrow-right.svg') center no-repeat;
 	background-color: #F5F5F5;
 	width: 48px;
@@ -362,16 +366,41 @@ header {
 	border-radius: 50%;
 }
 
-.slick-slide {
+.places_slider .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.places_slider .slick-dots li {
+	list-style: none;
+	margin: 0px 10px;
+}
+
+.places_slider .slick-dots li.slick-active button {
+	border: 1px solid black;
+	background-color: transparent;
+}
+
+.slick-dots button {
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: rgba(48, 45, 40, 0.12);
+	border-radius: 50%;
+}
+
+.slick-slide:not(:last-child) {
 	margin: 0 15px 0 0;
 	background-color: #FFFFFF;
-	filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.04));
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	border-radius: 16px;
 	min-height: 500px;
 }
 
 .slick-list {
 	overflow: hidden;
+	height: 527px;
 }
 
 .places_slider-rating {
@@ -402,8 +431,11 @@ header {
 
 .reviews-slider {
 	display: flex;
-	width: 970px;
+	flex-wrap: wrap;
+	max-width: 970px;
 	margin: 0 auto;
+	column-gap: 32px;
+    row-gap: 60px;
 }
 
 article img {
@@ -415,14 +447,14 @@ article img {
 }
 
 .reviews-slider article {
-	width: 300px;
-	min-height: 350px;
+	min-width: 300px;
+	/* min-height: 350px; */
 	background: #FFFFFF;
 	border: 1px solid #FAFAFA;
 	box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
 	border-radius: 16px;
-	margin-right: 32px;
 	text-align: center;
+	flex: 1 1 0;
 }
 
 .reviews-slider article:last-of-type {
@@ -449,6 +481,11 @@ article .user-rev,
 	font-size: 14px;
 	line-height: 17px;
 	color: #112B3C;
+}
+
+.section_tours {
+	display: flex;
+	flex-direction: column;
 }
 
 .section_tours_inner {
@@ -495,10 +532,8 @@ article .user-rev,
 
 .places-items {
 	display: flex;
-}
-
-.with-margin {
-	margin-right: 94px;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .tour-price {
@@ -514,6 +549,8 @@ article .user-rev,
 	border-radius: 16px;
 	padding: 8px;
 	max-height: 290px;
+	display: flex;
+	flex-direction: column;
 }
 
 .tour-option img {
@@ -533,20 +570,15 @@ article .user-rev,
 	color: #808080;
 }
 
-.tour-price-middle {
-	font-weight: 700;
-	font-size: 16px;
-	color: #E61C5D;
-	padding-right: 13px;
-	max-height: 217px;
-}
-
 .tour-option-middle {
 	filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.04));
 	background: #FFFFFF;
 	border-radius: 16px;
 	margin-top: 120px;
 	padding: 7px 7px 11px 7px;
+	display: flex;
+	flex-direction: column;
+	min-width: 190px;
 }
 
 .tour-option-middle img {
@@ -567,20 +599,21 @@ article .user-rev,
 	color: #808080;
 }
 
+.tour-price-middle {
+	font-weight: 700;
+	font-size: 16px;
+	color: #E61C5D;
+	padding-right: 13px;
+}
+
 .footer-container {
 	margin-bottom: 119px;
 }
 
-.footer_contacts{ 
-	margin-right: 100px;
-}
-
-.footer-about {
-	margin-right: 146px;
-}
-
 .footer-main {
 	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .footer-main h4 {
@@ -593,11 +626,6 @@ article .user-rev,
 
 .footer-nav li {
 	padding-bottom: 18px;
-}
-
-.footer-company,
-.footer-support {
-	margin-right: 108px;
 }
 
 .footer_navigation a {
@@ -651,6 +679,3 @@ article .user-rev,
     transform: translate(0, -50%);
 }
 
-.slick-slide {
-	width: 370px;
-}
