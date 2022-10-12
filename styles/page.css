@@ -106,12 +106,17 @@ header {
 	display: flex;
 }
 
+.section_search-left {
+	display: flex;
+	flex-direction: column;
+}
+
 .section_search-left .main-heading{
 	font-weight: 700;
 	font-size: 64px;
 	color: #112B3C;
 	margin-bottom: 32px;
-	width: 568px;
+	max-width: 568px;
 }
 
 .section_search-paragtaph {
@@ -119,7 +124,7 @@ header {
 	font-size: 24px;
 	line-height: 29px;
 	margin-bottom: 32px;
-	width: 469px;
+	max-width: 469px;
 }
 
 .form-wrap {

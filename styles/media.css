@@ -7,8 +7,9 @@
 }
 
 @media (max-width: 1230px) {
-    body{
-        padding: 0 40px;
+
+    body {
+        padding: 0px 40px;
     }
 
     .common-main-section-indent,
@@ -61,7 +62,7 @@
     .nav-button {
         position: fixed;
         top: 35px;
-        right: 36px;
+        right: 40px;
         z-index: 5;
     }
 
@@ -69,7 +70,6 @@
         font-size: 34px;
         font-weight: 500;
         line-height: 40px;
-        width: 469px;
     }
 
     .section_search-paragtaph {
@@ -138,6 +138,12 @@
         display: none;
     }
 
+    .section_search-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .section_search-left .main-heading {
         text-align: center;
     }
@@ -188,7 +194,7 @@
 }
 
 
-@media (max-width: 889px) {
+@media (max-width: 820px) {
 
     .header_wrap {
         margin-bottom: 20px;
@@ -204,14 +210,33 @@
         padding: 60px 0;
     }
 
-    .section_tours {
-        padding: 60px 0;
-    }
-
     .footer-main {
         column-gap: 40px;
         row-gap: 40px;
     }
 
+}
+
+@media (max-width: 490px) {
+    .form-wrap {
+        background-color: none;
+        box-shadow: none;
+    }
+
+    .date-option {
+        padding-left: 32px;
+    }
+
+    .location-option {
+        padding-left: 32px;
+    }
+
+    .location-option:before {
+        display: none;
+    }
+
+    .date-option:before {
+        display: none;
+    }
 }
 
