@@ -190,7 +190,6 @@
         padding-right: 13px;
     }
 
-
 }
 
 
@@ -221,22 +220,25 @@
     .form-wrap {
         background-color: none;
         box-shadow: none;
-    }
-
-    .date-option {
-        padding-left: 32px;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: start;
     }
 
     .location-option {
-        padding-left: 32px;
+        padding: 0;
     }
 
-    .location-option:before {
+    .location-option::after {
         display: none;
     }
 
-    .date-option:before {
-        display: none;
+    .date-option {
+        padding: 0;
+    }
+
+    .button-search img {
+        width: 24px;
     }
 }
 

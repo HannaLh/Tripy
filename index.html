@@ -32,6 +32,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
 
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> -->
+    <link rel="stylesheet" href="./styles/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
 
     <link rel="stylesheet" href="./styles/page.css">
     <link rel="stylesheet" href="./styles/media.css">
@@ -70,15 +73,14 @@
                         <h1 class="main-heading">Dare to live the life you've always wanted.</h1>
                         <p class="section_search-paragtaph">Life is short and the world is wide. So, better get started.</p>
                         <div class="form-wrap">
-                            <div class="location-option">
-                                <p class="location-option-dropdown">Location</p>
-                                <p class="location-option-list">Allentown, New Mexico</p>
+                            <div class="ui-widget location-option">
+                                <span><img src="./icon-img/location.svg" alt=""/></span>
+                                <label for="tags"><input class="tags" id="tags" placeholder="Location"></label>
                             </div>
                             <div class="date-option">
-                                <p class="date-option-dropdown">Date</p>
-                                <p class="date-option-list">04 Aug, 2022</p>
+                                <input class="datepicker" type="text" id="datepicker" placeholder="Date">
                             </div>
-                            <button type="button"><img src="./icon-img/Search-button.svg" alt="search button"/></button>
+                            <button class="button-search" type="button"><img src="./icon-img/Search-button.svg" alt="search button"/></button>
                         </div>
                     </div>
                     <div class="section-image-right">
@@ -211,26 +213,82 @@
                     <h2 class="section-title">testimonial</h2>
                     <p class="common-media-fz">Satisfied travellers around <span>the world</span></p>
                     <div class="reviews-slider">
-                        <article>
+                        <article class="article-rev">
                             <img class="user-photo" src="./pictures-img/Ellipse3.png" alt=""/>
                             <h3>Eleanor Pena</h3>
                             <p class="common-professions">UI/UX Designer</p>
-                            <img src="./icon-img/Stars.png" alt="rating stars" />
-                            <!-- TODO потім переробити через input!! -->
+                            <div class="wrapper">
+                                <form acrion="#" methot="GET" class="form form_margin">
+                                    <div class="form__item">
+                                    <div class="simple-rating">
+                                        <div class="simple-rating__items">
+                                        <input id="simple-rating__5" class="simple-rating__item" type="radio" name="simple-rating" value="5"/>
+                                        <label for="simple-rating__5" class="simple-rating__label"></label>
+                                        <input id="simple-rating__4" class="simple-rating__item" type="radio" name="simple-rating" value="4"/>
+                                        <label for="simple-rating__4" class="simple-rating__label"></label>
+                                        <input id="simple-rating__3" class="simple-rating__item" type="radio" name="simple-rating" value="3"/>
+                                        <label for="simple-rating__3" class="simple-rating__label"></label>
+                                        <input id="simple-rating__2" class="simple-rating__item" type="radio" name="simple-rating" value="2"/>
+                                        <label for="simple-rating__2" class="simple-rating__label"></label>
+                                        <input id="simple-rating__1" class="simple-rating__item" type="radio" name="simple-rating" value="1"/>
+                                        <label for="simple-rating__1" class="simple-rating__label"></label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </form>
+                            </div>
                             <p class="user-rev">Customer testimonials are more effective than paid marketing copy as they take the spotlight away from the seller to shine it on the customers. </p>
                         </article>
-                        <article>
+                        <article class="article-rev">
                             <img class="user-photo" src="./pictures-img/Ellipse2.png" alt=""/>
                             <h3>Theresa Webb</h3>
                             <p class="common-professions">Vlogger</p>
-                            <img src="./icon-img/Stars.png" alt="rating stars" />
+                            <div class="wrapper">
+                                <form acrion="#" methot="GET" class="form form_margin">
+                                    <div class="form__item">
+                                    <div class="simple-rating">
+                                        <div class="simple-rating__items">
+                                        <input id="simple-rating__6" class="simple-rating__item" type="radio" name="simple-rating" value="5"/>
+                                        <label for="simple-rating__6" class="simple-rating__label second_rating"></label>
+                                        <input id="simple-rating__7" class="simple-rating__item" type="radio" name="simple-rating" value="4"/>
+                                        <label for="simple-rating__7" class="simple-rating__label second_rating"></label>
+                                        <input id="simple-rating__8" class="simple-rating__item" type="radio" name="simple-rating" value="3"/>
+                                        <label for="simple-rating__8" class="simple-rating__label second_rating"></label>
+                                        <input id="simple-rating__9" class="simple-rating__item" type="radio" name="simple-rating" value="2"/>
+                                        <label for="simple-rating__9" class="simple-rating__label second_rating"></label>
+                                        <input id="simple-rating__10" class="simple-rating__item" type="radio" name="simple-rating" value="1"/>
+                                        <label for="simple-rating__10" class="simple-rating__label second_rating"></label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </form>
+                            </div>
                             <p class="user-rev">In promotion and advertising, a testimonial or show consists of a person's written statement extolling the virtue of a product.</p>
                         </article>
-                        <article>
+                        <article class="article-rev">
                             <img class="user-photo" src="./pictures-img/Ellipse1.png" alt=""/>
                             <h3>Annette Black</h3>
                             <p class="common-professions">Doctor</p>
-                            <img src="./icon-img/Stars.png" alt="rating stars" />
+                            <div class="wrapper">
+                                <form acrion="#" methot="GET" class="form form_margin">
+                                    <div class="form__item">
+                                    <div class="simple-rating">
+                                        <div class="simple-rating__items">
+                                        <input id="simple-rating__11" class="simple-rating__item" type="radio" name="simple-rating" value="5"/>
+                                        <label for="simple-rating__11" class="simple-rating__label"></label>
+                                        <input id="simple-rating__12" class="simple-rating__item" type="radio" name="simple-rating" value="4"/>
+                                        <label for="simple-rating__12" class="simple-rating__label"></label>
+                                        <input id="simple-rating__13" class="simple-rating__item" type="radio" name="simple-rating" value="3"/>
+                                        <label for="simple-rating__13" class="simple-rating__label"></label>
+                                        <input id="simple-rating__14" class="simple-rating__item" type="radio" name="simple-rating" value="2"/>
+                                        <label for="simple-rating__14" class="simple-rating__label"></label>
+                                        <input id="simple-rating__15" class="simple-rating__item" type="radio" name="simple-rating" value="1"/>
+                                        <label for="simple-rating__15" class="simple-rating__label"></label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </form>
+                            </div>
                             <p class="user-rev">Testimonials work because they aren''t strong sales pitches, they come across in an unbiased voice and establish trust</p>
                         </article>
                     </div>
@@ -272,7 +330,6 @@
         </section>
     </main>
     <footer>
-        <!-- TODO найти иконку юутуба -->
         <div class="container footer-container">
             <div class="footer-main">
                 <div class="footer_contacts">
@@ -281,7 +338,7 @@
                     <div class="footer_social-networks">
                         <a href="#" aria-label="Facebook"><img src="./icon-img/facebook.svg" alt="facebook logo"/></a>
                         <a href="#" aria-label="Instagram"><img src="./icon-img/instagram.svg" alt="instagram logo"/></a>
-                        <a href="#" aria-label="Youtube"><img src="./icon-img/youtube.svg" alt="youtube logo"/></a>
+                        <a href="#" aria-label="YouTube"><img class="youtube-icon" src="./icon-img/youtubepspsp.png" alt=""/></a>
                     </div>
                 </div>
                 <div class="footer_navigation fl footer-about">
@@ -329,10 +386,12 @@
         </div>
     </footer>
     <!-- Подключение jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!-- Подключение slick slider -->
     <script src="./js/slick.min.js"></script>
     <!-- Файл java script -->
     <script src="./js/custom.js"></script>
+
 </body>
 </html>

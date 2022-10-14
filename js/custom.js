@@ -11,6 +11,45 @@ navBtn.onclick = () => {
     }
 };
 
+$( function() {
+    var availableTags = [
+    "Allentown, New Mexico",
+    "Afghanistan, Kabul",
+    "Albania, Tirana",
+    "Algeria, Algiers",
+    "Andorra, Andorra la Vella",
+    "Bangladesh, Dhaka",
+    "Barbados, Bridgetown",
+    "Belgium, Brussels",
+    "Belize, Belmopan",
+    "Botswana, Gaborone",
+    "Kiribati, Tarawa",
+    "Liechtenstein, Vaduz ",
+    "Lithuania, Vilnius",
+    "Norway, Oslo",
+    "Poland, Warsaw ",
+    "Qatar, Doha",
+    "Senegal, Dakar",
+    "Seychelles, Victoria"
+    ];
+    $( "#tags" ).autocomplete({
+        source: availableTags
+    });
+} );
+
+
+$( function(){
+
+    $( "#datepicker" ).datepicker({
+        showOn: "button",
+        buttonImage: "icon-img/calendar-2.svg",
+        buttonImageOnly: true,
+        buttonText: "Select date"
+    });
+
+});
+
+
 $(function(){
 
     $('.places_slider').slick({
@@ -36,3 +75,4 @@ $(function(){
     });
 
 });
+

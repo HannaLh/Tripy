@@ -116,7 +116,6 @@ header {
 	font-size: 64px;
 	color: #112B3C;
 	margin-bottom: 32px;
-	max-width: 568px;
 }
 
 .section_search-paragtaph {
@@ -130,35 +129,60 @@ header {
 .form-wrap {
 	display: flex;
 	align-items: center;
-	max-width: 469px;
 	background: #FFFFFF;
 	box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
 	border-radius: 58px;
 	padding: 15px 0;
+	max-width: 507px;
 }
 
-.location-option {
+.ui-datepicker-trigger {
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+}
+
+.datepicker {
+	max-width: 85px;
+}
+
+.date-option {
 	display: flex;
-	flex-direction: column;
-	position: relative;
-	padding-right: 32px;
-	padding-left: 65px;
+	flex-direction: row-reverse;
+	padding: 0px 32px;
+	column-gap: 16px;
 }
 
-.location-option-dropdown,
-.date-option-dropdown {
+.date-option input {
+	border: none;
+}
+.date-option input::placeholder {
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 14px;
 	color: #808080;
 }
 
-.date-option-list,
-.location-option-list {
-	font-weight: 700;
+.location-option {
+	position: relative;
+	display: flex;
+	padding-left: 27px;
+	column-gap: 16px;
+}
+
+.location-option input {
+	border: none;
+}
+
+.location-option input::placeholder {
+	font-weight: 600;
 	font-size: 12px;
 	line-height: 14px;
-	color: #112B3C;
+	color: #808080;
+}
+
+.tags {
+	max-width: 160px;
 }
 
 .location-option:after {
@@ -166,47 +190,15 @@ header {
 	position: absolute;
 	width: 1px;
 	height: 24px;
-	background-color: #808080;
+	background-color: #080707;
 	opacity: 0.24;
 	left: 100%;
 	top: 50%;
     transform: translate(0, -50%);
 }
 
-.date-option {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	padding-right: 32px;
-	padding-left: 70px;
-}
-
-.date-option:before {
-	content: '';
-	background-image: url('../icon-img/calendar-2.svg');
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 3px;
-    left: 0;
-	width: 22px;
-	height: 22px;
-	margin-left: 32px
-}
-
-.location-option:before {
-	content: '';
-	background-image: url('../icon-img/location.svg');
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 3px;
-    left: 0;
-	width: 22px;
-	height: 22px;
-	margin-left: 27px
-}
-
-.form-wrap button {
-	background-color: #FFFFFF;
+.button-search {
+	padding-right: 27px;
 }
 
 .section-image-right {
@@ -443,6 +435,20 @@ header {
     row-gap: 60px;
 }
 
+.article-rev {
+	position: relative;
+}
+
+.article-rev:before {
+	content: '';
+	background: url('../icon-img/quote-down-circle.svg') no-repeat;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	bottom: 93%;
+	left: 80%;
+}
+
 article img {
 	padding-bottom: 12px;
 }
@@ -453,7 +459,6 @@ article img {
 
 .reviews-slider article {
 	min-width: 300px;
-	/* min-height: 350px; */
 	background: #FFFFFF;
 	border: 1px solid #FAFAFA;
 	box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
@@ -471,6 +476,66 @@ article img {
 	font-size: 18px;
 	line-height: 22px;
 	color: #112B3C;
+}
+
+.simple-rating {
+	position: relative;
+	font-size: 18px;
+	display: inline-block;
+}
+
+.simple-rating:before {
+	content: '★★★★★';
+	display: block;
+}
+
+.simple-rating__items {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row-reverse;
+	overflow: hidden;
+}
+.simple-rating__item {
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	opacity: 0;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+}
+
+.simple-rating__label {
+	flex: 0 0 20%;
+	height: 100%;
+	cursor: pointer;
+	color: #969693;
+}
+
+.simple-rating__label:before {
+	content: '★';
+	display: block;
+	transition: color 0.3s ease 0s;
+}
+
+.simple-rating__item:checked,
+.simple-rating__item:checked ~ .simple-rating__label{
+	color: #FFBD39;
+}
+
+.simple-rating__label:hover,
+.simple-rating__label:hover ~ .simple-rating__label,
+.simple-rating__label:checked ~ .simple-rating__label:hover {
+	color: #FFBD39;
+}
+
+.simple-rating__item:checked,
+.simple-rating__item:checked ~ .second_rating {
+	color: #FFBD39;
 }
 
 .user-rev {
@@ -639,6 +704,7 @@ article .user-rev,
 	color: #112B3C;
 }
 
+
 .footer_contacts address,
 .newsletter label {
 	font-size: 14px;
@@ -649,6 +715,18 @@ article .user-rev,
 .footer_contacts img,
 .footer_contacts address {
 	margin-bottom: 18px;
+}
+
+.footer_social-networks {
+	display: flex;
+	align-items: center;
+}
+
+.youtube-icon {
+	margin-left: 2px;
+	width: 21px;
+    height: 20px;
+    border-radius: 5px;
 }
 
 .newsletter p {
